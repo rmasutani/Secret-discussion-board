@@ -14,6 +14,7 @@ html(lang="ja")
         button(type="submit") 投稿
 
     h2 Posts
-    each content in contents 
-      p #{content}
+    each post in posts
+      p #{post.content}
+      p Date posted: #{post.createdAt}
       hr
